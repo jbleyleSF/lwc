@@ -78,7 +78,7 @@ type AttributeChangedCallback = (
 
 function createAttributeChangedCallback(
     attributeToPropMap: Record<string, string>,
-    superAttributeChangedCallback: AttributeChangedCallback
+    superAttributeChangedCallback?: AttributeChangedCallback
 ): AttributeChangedCallback {
     return function attributeChangedCallback(
         this: HTMLElement,
